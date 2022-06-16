@@ -4,22 +4,63 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
-.card {
-    background-color: hsl(213, 19%, 18%);
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.card-1, .card-2{
+    /* background-color: hsl(213, 19%, 18%);
     border: 1px solid hsl(213, 19%, 18%);
-    border-radius: 10%;
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 50%; */
     height: 380px;
     width: 350px;
     padding: 30px;
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    max-width: 350px;
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 1.5rem;
+    padding: 25px 35px;
+    
+}
+
+
+.card-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: bottom;
+    transition: all .15s;
+}
+
+
+.active {
+    transform: scale(1);
+}
+
+.content h1{
+    text-align: center;
+    align-items: center;
+}
+
+.content p{
+    text-align: center;
+    line-height: 25px;
 }
 
 svg {
-    background-color: hsl(216, 12%, 54%);
-    border: 15px solid hsl(216, 12%, 54%);
+    background-color: #323d49;
+    border: 15px solid #323d49;
     border-radius: 50%;
     margin-bottom: 15px;
 }
@@ -31,27 +72,31 @@ p {
     margin-bottom: 20px;
 }
 
-input[type="radio"]{
-    display: none;
+ul{
+    padding: 0px;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-span{
+li {
     display: inline-block;
-    height: 25px;
-    width: 25px;
-    text-align: center;
-    padding: 10px;
-    background-color: hsl(216, 12%, 54%);
-    border: 1px solid hsl(216, 12%, 54%);
-    border-radius: 50%;
-    margin: 9px;
+    width: 45px;
+    height: 45px;
+    vertical-align: middle;
     cursor: pointer;
+    border-radius: 50%;
+    background-color: #323d49;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    line-height: 45px;
 }
 
 input[type="submit"]{
     width: 100%;
     padding: 10px;
-    margin-top: 30px;
+    margin-top: 20px;
     background-color: hsl(25, 97%, 53%);
     color: white;
     border: 0 none;
@@ -59,15 +104,37 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-span:hover{
+img{
+    margin-bottom: 30px;
+}
+
+
+.ratings-preview p{
+    margin: 0;
+    color: hsl(25, 97%, 53%);
+}
+
+.ratings-preview{
+    width: 50%;
+    padding: 2px 7px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 1px solid #323d49;
+    background-color: #323d49;
+    border-radius: 20px;
+}
+
+li:hover:not(.rating-clicked) {
     background-color: hsl(217, 12%, 63%);
-
+    color: white;
+    cursor: pointer;
 }
 
-span:active{
+.rating-clicked{
     background-color: hsl(25, 97%, 53%);
-
+    color: white;
 }
+
 
 input[type="submit"]:hover{
     background-color: white;

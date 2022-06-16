@@ -14,7 +14,8 @@ main {
 }
 
 
-.card-1, .card-2{
+.card-1,
+.card-2 {
     /* background-color: hsl(213, 19%, 18%);
     border: 1px solid hsl(213, 19%, 18%);
     position: absolute;
@@ -28,7 +29,7 @@ main {
     background-color: hsl(213, 19%, 18%);
     border-radius: 1.5rem;
     padding: 25px 35px;
-    
+
 }
 
 
@@ -48,12 +49,12 @@ main {
     transform: scale(1);
 }
 
-.content h1{
+.content h1 {
     text-align: center;
     align-items: center;
 }
 
-.content p{
+.content p {
     text-align: center;
     line-height: 25px;
 }
@@ -72,7 +73,7 @@ p {
     margin-bottom: 20px;
 }
 
-ul{
+ul {
     padding: 0px;
     margin: 20px 0;
     display: flex;
@@ -93,7 +94,7 @@ li {
     line-height: 45px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
     width: 100%;
     padding: 10px;
     margin-top: 20px;
@@ -104,17 +105,17 @@ input[type="submit"]{
     cursor: pointer;
 }
 
-img{
+img {
     margin-bottom: 30px;
 }
 
 
-.ratings-preview p{
+.ratings-preview p {
     margin: 0;
     color: hsl(25, 97%, 53%);
 }
 
-.ratings-preview{
+.ratings-preview {
     width: 50%;
     padding: 2px 7px;
     margin-bottom: 20px;
@@ -130,16 +131,29 @@ li:hover:not(.rating-clicked) {
     cursor: pointer;
 }
 
-.rating-clicked{
+.rating-clicked {
     background-color: hsl(25, 97%, 53%);
     color: white;
 }
 
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
     background-color: white;
     color: hsl(25, 97%, 53%);
 }
 
+footer {
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+}
 
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
 
+.attribution a {
+    color: hsl(25, 97%, 53%);
+    text-decoration: none;
+}

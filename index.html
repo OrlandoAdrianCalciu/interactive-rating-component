@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <header>
-        <div class="card">
+    <main>
+        <div class="card-1">
             <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16">
                 <path xmlns="http://www.w3.org/2000/svg"
                     d="m9.067.43 1.99 4.031c.112.228.33.386.58.422l4.45.647a.772.772 0 0 1 .427 1.316l-3.22 3.138a.773.773 0 0 0-.222.683l.76 4.431a.772.772 0 0 1-1.12.813l-3.98-2.092a.773.773 0 0 0-.718 0l-3.98 2.092a.772.772 0 0 1-1.119-.813l.76-4.431a.77.77 0 0 0-.222-.683L.233 6.846A.772.772 0 0 1 .661 5.53l4.449-.647a.772.772 0 0 0 .58-.422L7.68.43a.774.774 0 0 1 1.387 0Z"
@@ -25,41 +25,39 @@
             <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve
                 our offering!</p>
 
-            <div class="">
-                <div class="radio">
-                    <form action="">
-                    <input type="radio" id="rating1" name="ratings" value="ratings">
-                    <label for="rating1"><span>1</span></label>
-                    <input type="radio" id="rating2" name="ratings" value="ratings">
-                    <label for="rating2"><span>2</span></label>
-                    <input type="radio" id="rating3" name="ratings" value="ratings">
-                    <label for="rating3"><span>3</span></label>
-                    <input type="radio" id="rating4" name="ratings" value="ratings">
-                    <label for="rating4"><span>4</span></label>
-                    <input type="radio" id="rating5" name="ratings" value="ratings">
-                    <label for="rating5"><span>5</span></label>
-
-                    <br>
-                    <input type="submit" value="SUBMIT">
-                </form>
-                </div>
+            <div class="ratings">
+                    <ul>
+                        <li class="rating">1</li>
+                        <li class="rating">2</li>
+                        <li class="rating">3</li>
+                        <li class="rating">4</li>
+                        <li class="rating">5</li>
+                    </ul>
+                    <input type="submit" value="SUBMIT" class="submit">
             </div>
         </div>
 
+        <div class="card-2">
+            <img src="images/illustration-thank-you.svg" alt="thank you">
 
-
-        <!-- You selected out of 5
-
-    Thank you!
-
-    We appreciate you taking the time to give a rating. If you ever need more support,
-    don’t hesitate to get in touch! -->
-
-
+            <div class="ratings-preview">
+                <p>You selected <span id="selected-rating">4</span> out of 5</p>
+            </div>
+            <div class="content">
+                <h1>Thank you!</h1>
+                <p>We appreciate you taking the time to give a rating. If you ever need more support,
+                    don’t hesitate to get in touch!</p>
+            </div>
+        </div>
+    </main>
         <!-- <div class="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
         Coded by <a href="#">Your Name Here</a>.
     </div> -->
+
+
+
+<script src="scripts.js"></script>
 </body>
 
-</html>
+</html> 
